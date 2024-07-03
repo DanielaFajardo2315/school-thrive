@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-section{
-    width: 100%;
+body{
+    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
 }
 
+/* Barra de navegación superior */
 .nav-bar{
     background-color: white;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .logo{
-    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
     text-align: left;
     width: 187px;
-    height: 58px;
-    position: absolute;
+    height: auto;
+    position: relative;
     top: 17px;
     left: 136px;
 }
@@ -42,7 +42,6 @@ section{
     text-align: center;
     text-decoration: none;
     font-size: 14px;
-    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
     font-weight: 700;
     background-color: white;
     cursor: pointer;
@@ -53,7 +52,6 @@ section{
     color: white;
     text-align: center;
     font-size: 14px;
-    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
     font-weight: 700;
     background-color: #96BB7C;
     width: 137px;
@@ -61,28 +59,27 @@ section{
     cursor: pointer;
 }
 
-header{
+/* Banner de información central */
+.banner{
     background-color: #DDF4FF;
-    width: 100%;
-    height: 826px;
-}
-
-.info-banner{
-    border-style: solid;
+    width: auto;
+    height: auto;
+    margin-top: 70px;
 }
 
 .caja-info{
     display: flex;
     flex-wrap: wrap;
     max-width: 1170px;
-    margin: 0px 50px 0px 132px;
+    margin: 0 auto;
     padding: 100px;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .h5info{
     width: 300px;
     height: 24px;
-    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -93,7 +90,6 @@ header{
 .h1info{
     width: 542px;
     height: 160px;
-    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
     font-size: 58px;
     font-weight: 700;
     line-height: 80px;
@@ -104,7 +100,6 @@ header{
 .h4info{
     width: 458px;
     height: 60px;
-    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -121,11 +116,11 @@ header{
     color: white;
     background-color: #96BB7C;
     border: none;
-    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
     text-align: center;
+    cursor: pointer;
 }
 
 .button-learn{
@@ -139,30 +134,32 @@ header{
     border-color: #96BB7C;
     color: #96BB7C;
     background-color: transparent;
-    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
     font-weight: 700;
+    cursor: pointer;
 }
 
+/* Contenedor de imagenes dentro del banner */
 .imagenes{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 104px;
-    max-width: 1170px;
-    height: 682px;
-    position: absolute;
+    width: 100%;
+    max-width: 500px;
+}
+
+.intern-img{
+    position: relative;
+    height: 523px;
 }
 
 .elipse{
     position: absolute;
     top: 111.66px;
-    left: 649.64px;
+    left: 49.64px;
 }
 
 .img1{
     width: 532.15px;
     height: 622.04px;
     position: absolute;
-    left: 635.74px;
+    left: 35.74px;
 }
 
 .img2{
@@ -170,7 +167,7 @@ header{
     height: 149.65px;
     position: absolute;
     top: 483px;
-    left: 615.24px;
+    left: 15.24px;
 }
 
 .img3{
@@ -178,7 +175,7 @@ header{
     height: 183.53px;
     position: absolute;
     top: 278.12px;
-    left: 1053.46px;
+    left: 453.46px;
 }
 
 .img4{
@@ -186,21 +183,21 @@ header{
     height: 81.88px;
     position: absolute;
     top: 237.18px;
-    left: 587.98px;
+    left: -12.02px;
 }
 
+/* Sección de datos relevantes */
 .stats{
+    background-color: white;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 264px;
     margin: 0 auto;
     width: 80%;
     gap: 50px;
 }
 
 div h1{
-    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
     font-size: 58px;
     font-weight: 700;
     line-height: 80px;
@@ -210,7 +207,6 @@ div h1{
 }
 
 div h5{
-    font-family: Montserrat, sans-serif, Verdana, Geneva, Tahoma;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -221,22 +217,24 @@ div h5{
 
 .stats div{
     width: 238px;
-    height: 104px;
+    height: 264px;
 }
 
+/* Sección Get Quality Education */
 .get{
     background-color: #FFF2F3;
     width: 100%;
-    height: 718px;
-    padding: 50px;
+    height: auto;
+    padding: 50px 0px;
 }
 
 .contenedor{
     display: flex;
+    flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
-    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .caja{
@@ -248,9 +246,10 @@ div h5{
 }
 
 .get h2{
+    display: flex;
+    flex-wrap: wrap;
     width: 700px;
     height: 50px;
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
@@ -270,7 +269,6 @@ div h5{
 .titlebox{
     width: 300px;
     height: 24px;
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -283,60 +281,36 @@ div h5{
 .content{
     width: 253px;
     height: 40px;
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.20000000298023224px;
     text-align: left;
     color: #737373;
-
     z-index: 1;
 }
 
-footer{
-    background-color: #FAFAFA;
-    width: 1519.2px;
+/* Footer */
+.footer{
+    margin: 0 auto;
+    display: flex;
     height: 74px;
-    position: absolute;
-    top: 1830px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1520px;
 }
 
 footer h6{
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.20000000298023224px;
     text-align: left;
     color: #737373;
-    position: absolute;
-    left: 195px;
 }
 
-.iconof1{
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 45px;
-    left: 1070px;
-    z-index: 1;
-}
-
-.iconof2{
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 45px;
-    left: 1115.5px;
-    z-index: 1;
-}
-
-.iconof3{
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 45px;
-    left: 1158px;
-    z-index: 1;
+@media screen and (max-width: 600px) {
+    .get h2 {
+        margin-left: 10px;
+    }
 }
